@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+}
+
+span{
+    opacity: .4;
+}
+p {
+  margin: 5px 0;
+}
+
+h2 {
+  margin: 12px 0 24px;
+  text-align: center;
+}
+label {
+  font-size: 1rem;
+}
+input[type="checkbox"] {
+  margin-right: 0;
+}
+.container {
+  background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  background-image: linear-gradient(to right, #214968 0%, #517fa4 100%);
+  padding: 10px;
+  border: 3px solid white;
+  width: 400px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 02px 2px 16px #87abc7, -2px -2px 16px #98abbb;
+}
+.result-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 12px 10px;
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.result-container #result {
+  word-wrap: break-word;
+  max-width: calc(100% - 40px);
+}
+
+.result-container .btn {
+  font-size: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+}
+
+.btn {
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 12px;
+  background-image: linear-gradient(
+    -225deg,
+    #5d9fff 0%,
+    #b8dcff 48%,
+    #6bbbff 100%
+  );
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.btn-large {
+  display: block;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.8);
+}
+.settings{
+    padding: .2rem;
+}
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+@media screen and (max-width: 400px) {
+  .result-container {
+    font-size: 14px;
+  }
+}
